@@ -1,0 +1,47 @@
+[
+ {
+  "TCID": 1,
+  "Description": "Get single student data",
+  "URL": "http\/\/loaclhost\/\/:3000\/student\/1",
+  "HTTP request": "Get",
+  "Authetication": "Na",
+  "Request Payload": "Na",
+  "Response payload": "{   \"id\":1,\n\"name\":\"John\",\n\"location\":\"india\",\n\"phone\":\"7276405564\",\n\"courses\":[\n\"Java\",\n\"selenium\"\n]\n},"
+ },
+ {
+  "TCID": 2,
+  "Description": "Get all student data",
+  "URL": "http\/\/loaclhost\/\/:3000\/student",
+  "HTTP request": "Get",
+  "Authetication": "NA",
+  "Request Payload": "na",
+  "Response payload": "{   \"id\":1,\n\"name\":\"John\",\n\"location\":\"india\",\n\"phone\":\"7276405564\",\n\"courses\":[\n\"Java\",\n\"selenium\"\n]\n},{\"id\":2,\n\"name\":\"Aparna\",\n\"location\":\"india\",\n\"phone\":\"123456789\",\n\"courses\":[\n\"Python\",\n\"Appium\"\n]\n},\n\n{\n\"id\":3,\n\"name\":\"Anandi\",\n\"location\":\"Us\",\n\"Phone\":\"987654321\",\n\"courses\":[\n\"c#\",\n\"RestAPI\"\n  ]\n }\n ]\n }"
+ },
+ {
+  "TCID": 3,
+  "Description": "Create new Student",
+  "URL": "http\/\/loaclhost\/\/:3000\/student",
+  "HTTP request": "Post",
+  "Authetication": "NA",
+  "Request Payload": "{   \n\"name\":\"Scott\",\n\"location\":\"France\",\n\"phone\":\"123456\",\n\"courses\":[\n\"c\",\n\"C++\"\n]\n},",
+  "Response payload": "{   \n\"name\":\"Scott\",\n\"location\": \"France\",\n\"phone\":\"123456\",\n\"courses\":[\n\"c\",\n\"C++\"\n]\n \"id\": 4 },                                         "
+ },
+ {
+  "TCID": 4,
+  "Description": "Update Student",
+  "URL": "http\/\/loaclhost\/\/:3000\/student\/4",
+  "HTTP request": "Update",
+  "Authetication": "NA",
+  "Request Payload": "{   \n\"name\":\"Scott\",\n\"location\":\"Germany\",\n\"phone\":\"123456\",\n\"courses\":[\n\"c\",\n\"C++\"\n]\n},",
+  "Response payload": "{   \n\"name\":\"Scott\",\n\"location\": \"Germany\",\n\"phone\":\"123456\",\n\"courses\":[\n\"c\",\n\"C++\"\n]\n \"id\": 4 },                                         "
+ },
+ {
+  "TCID": 5,
+  "Description": "Delete Student",
+  "URL": "http\/\/loaclhost\/\/:3000\/student\/4",
+  "HTTP request": "Delete",
+  "Authetication": "NA",
+  "Request Payload": "NA",
+  "Response payload": "{}"
+ }
+]
